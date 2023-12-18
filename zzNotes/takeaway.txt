@@ -1,0 +1,2 @@
+
+> a react variable can store tag
