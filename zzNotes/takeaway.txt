@@ -1,2 +1,63 @@
-
+i>     -------DAY : 1
 > a react variable can store tag
+
+>  variable must be inside {} while calling inside TAGS AND also implement js operation using {}
+>variable lai tag vitra call garda matra {} use garney
+> return () ma sidahai () yesko vitra call garney
+
+>${} : yo {} ko vitra js ko operation garna ni milxa:
+>  let a = `${1+1}`
+
+>JS function can have only one return/ return type
+>also there must be only one wrapper in return
+
+>anything that is written inside will display in browser
+
+--------------------------------------------------------
+----------------element----------
+->  i): block element - 
+                - it takes all width 
+                - it always starts from new line
+                eg: div, h1, p..
+-> ii) : inline element -
+                - it only takes required width    
+                eg: span       
+----------------------
+ -> React ma jun sukai tag haru ni close garda/nagarda ni hunxa                
+-----------------------
+<a></a> tag : for linking
+to open in new tab ,add target.
+ie <a href="https://www.facebook.com/photo/?fbid=908365585880563&set=t.100004001977601" target " ">facebook</a> //target ma j rakhda ni hunxa      
+-----------------------
+<img> tag
+-always place images or files at public folder.
+-<img src="./gr.png"> //yesma . represents public folder
+i.e  : -   . at src of images refers to public folder
+-broken img : 
+-<img></img> yesko bichma kei hunnu hunna, space haru ni nahalney like <img> </img>, natra error awuxa  bcz yini haru self closing tag ho
+so self closing tag ko bich ma kei narakhney
+----------------------
+CSS:
+i)inline : obj is used for styling purpose.
+        -use {{ }}
+        -eg :     <div style={{textAlign:'center',color:`red`}}
+        -follow camelCase
+
+ii) external:xutai define garera import garney
+
+-it's a 3 step process:
+                   -define
+                   -import
+                   -use
+--------------------------
+index ma import gareko css lai index ma haleko compoent sabai le use garna milxa
+
+
+
+------------------------------DAY:@
+
+-component : its a function with initial letter capital
+ex: function App(){}
+we call component like calling html tag
+i.e : <App></App> OR <App />
+-shortcut:rafce,rafc,rfc

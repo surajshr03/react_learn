@@ -2,4 +2,7 @@
 >alt+ shift+ o to remove unused imports
 
 
+>in react console(terminal) will appear in browser
+
+
 
