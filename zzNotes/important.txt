@@ -3,5 +3,7 @@
 >in react console(terminal) will appear in browser
 >props lai {} ma rakhney component banauda
 
+>react ma js lai jaike {} ma halney
+
 
 
