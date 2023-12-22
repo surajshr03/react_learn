@@ -1,7 +1,6 @@
 import "./App.css";
-import ButtonClick from "./Components/ButtonClick.jsx";
-import UseState2 from "./Components/UseStateHook/UseState2.jsx";
-import UseStateHook1 from "./Components/UseStateHook/UseStateHook1.jsx";
+//alt + shift + o : garera unused hatako xu paxi chaiye ma feri import garney
+import HandleImage from "./Components/UseStateHook/HandleImage.jsx";
 
 function App() {
   // let name = `Suraj`;
@@ -31,13 +30,13 @@ function App() {
       {/* <ButtonClick></ButtonClick> */}
 
       {/* <UseStateHook1></UseStateHook1> */}
-
-      <UseState2></UseState2>
-
+      {/* <UseState2></UseState2> */}
 
 
+{/* <UseStateImg/> */}
+<HandleImage/>
 
-      
+
     </div>
   );
 }

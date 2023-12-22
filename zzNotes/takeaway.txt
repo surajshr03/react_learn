@@ -108,4 +108,8 @@ i.e name="suraj" age={22}
                 Information: {info};//error
          }</div>
      eg:to properly call --Information : info.address;
-     
+ ------------------------------------------------------------
+
+ //onClick ma:
+//-handleImg           fun used=    (e)=>{}   : if u don't have to pass value
+//-handleImg()        fun used=     ()=>{return ((e)=>{})}        : if u have to pass value    
