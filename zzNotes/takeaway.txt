@@ -108,3 +108,4 @@ i.e name="suraj" age={22}
                 Information: {info};//error
          }</div>
      eg:to properly call --Information : info.address;
+     
