@@ -52,10 +52,17 @@ function App() {
 
 {/* <UseEffectPractice/> */}
 
-<LearnCleanUpFunction/>
-     
+{show ? <LearnCleanUpFunction/> : null}
+         <button onClick={()=>{setShow(true)}} >show</button>
+        <button onClick={()=>{setShow(false)}} >hide</button>
 
 
+
+
+
+
+
+        
     </div>
   );
 }

@@ -1,0 +1,3 @@
+terms : 
+- component mount : component rakhney.
+- component unmount : component nikaldiney.
