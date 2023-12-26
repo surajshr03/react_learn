@@ -113,3 +113,30 @@ i.e name="suraj" age={22}
  //onClick ma:
 //-handleImg           fun used=    (e)=>{}   : if u don't have to pass value
 //-handleImg()        fun used=     ()=>{return ((e)=>{})}        : if u have to pass value    
+
+
+
+
+
+
+
+
+
+
+-------------------------------------------
+                         DAY-6:
+
+  -Toogle
+  -Rendering: page will render when state variable is changed. ()
+
+-------------------------------
+(interview ques )
+  -useEffect : its a asynchronous function                   
+  -    useEffect function will run for first render but from 2nd render the execution of function will depends on its dependency   
+
+  -------------
+  useEffect -> cleanUp function ://cleanup function are those function returned by useEffect function
+      // cleanup function doesn't run in first render.
+      // from only 2nd render will the cleanup function get executed(Note : dependency variable must change too)
+      //Normally top to down execution but here (not in first render but after 2nd render), initially cleanup function gets executed and then from upwards like it usually does.  
+      --------------------------

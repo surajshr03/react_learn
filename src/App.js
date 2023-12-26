@@ -1,11 +1,21 @@
+import { useState } from "react";
 import "./App.css";
+import LearnCleanUpFunction from "./Components/UseEffectHook/LearnCleanUpFunction.jsx";
+import UseEffectPractice from "./Components/UseEffectHook/UseEffectPractice.jsx";
+import UseEffectPractise from "./Components/UseEffectHook/UseEffectPractice.jsx";
 //alt + shift + o : garera unused hatako xu paxi chaiye ma feri import garney
 import HandleImage from "./Components/UseStateHook/HandleImage.jsx";
+import Increment from "./Components/UseStateHook/Increment.jsx";
+import Toggle from "./Components/UseStateHook/Toggle.jsx";
+import WhyUseState from "./Components/UseStateHook/WhyUseState.jsx";
 
 function App() {
   // let name = `Suraj`;
   // let age = `22`;
   // console.log(name)
+
+  const[show,setShow]=useState(true);
+
   return (
     <div style={{ textAlign: "center" }}>
       {/* <div style={{textAlign:'center'}}>
@@ -34,7 +44,16 @@ function App() {
 
 
 {/* <UseStateImg/> */}
-<HandleImage/>
+{/* <HandleImage/> */}
+
+{/* <Toggle/> */}
+{/* <WhyUseState/> */}
+{/* <Increment/>   */}
+
+{/* <UseEffectPractice/> */}
+
+<LearnCleanUpFunction/>
+     
 
 
     </div>
