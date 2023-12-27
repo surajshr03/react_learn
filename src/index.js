@@ -5,19 +5,20 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "./learncss.css";
 import  "./global.css"
+import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div>
-
+<BrowserRouter>
   {/* <React.StrictMode> */}
     {/* <App /> */}
-
     <App></App>
-
-
-    
   {/* </React.StrictMode> */}
+</BrowserRouter>
+{/* app component ko component le aba browser routing support garxa */}
+
+
   </div>
 );
 

@@ -9,6 +9,10 @@ import Increment from "./Components/UseStateHook/Increment.jsx";
 import Toggle from "./Components/UseStateHook/Toggle.jsx";
 import WhyUseState from "./Components/UseStateHook/WhyUseState.jsx";
 
+
+import MyLinks from "./Components/MyLinks.jsx";
+import MyRoutes from "./Components/MyRoutes.jsx";
+
 function App() {
   // let name = `Suraj`;
   // let age = `22`;
@@ -52,17 +56,17 @@ function App() {
 
 {/* <UseEffectPractice/> */}
 
-{show ? <LearnCleanUpFunction/> : null}
+{/* {show ? <LearnCleanUpFunction/> : null}
          <button onClick={()=>{setShow(true)}} >show</button>
-        <button onClick={()=>{setShow(false)}} >hide</button>
+        <button onClick={()=>{setShow(false)}} >hide</button> */}
 
 
+      
+       <MyLinks/>   
+       <MyRoutes/>
 
 
-
-
-
-        
+        <p>____APP COMPONENT____</p>
     </div>
   );
 }

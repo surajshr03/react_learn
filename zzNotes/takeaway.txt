@@ -115,6 +115,20 @@ i.e name="suraj" age={22}
 //-handleImg()        fun used=     ()=>{return ((e)=>{})}        : if u have to pass value    
 
 
+--------------------------
+
+   > Routing:
+-BEFORE working with react router dom we have to wrrap <App></App> component by <Browserouter></Browserouter>.
+
+in main file (i.e: index.js)
+     <BrowserRouter>
+  {/* <React.StrictMode> */}
+    {/* <App /> */}
+    <App></App>
+  {/* </React.StrictMode> */}
+</BrowserRouter>
+-such that now every component inside app can work/support routing .
+
 
 
 
