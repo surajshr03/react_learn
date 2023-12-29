@@ -9,16 +9,18 @@ import Increment from "./Components/UseStateHook/Increment.jsx";
 import Toggle from "./Components/UseStateHook/Toggle.jsx";
 import WhyUseState from "./Components/UseStateHook/WhyUseState.jsx";
 
-
 import MyLinks from "./Components/MyLinks.jsx";
 import MyRoutes from "./Components/MyRoutes.jsx";
+import Form1 from "./Components/Form/Form1.jsx";
+import Form2 from "./Components/Form/Form2.jsx";
+import NestedRoutesProduct from "./Components/products/NestedRoutesProduct.jsx";
 
 function App() {
   // let name = `Suraj`;
   // let age = `22`;
   // console.log(name)
 
-  const[show,setShow]=useState(true);
+  const [show, setShow] = useState(true);
 
   return (
     <div style={{ textAlign: "center" }}>
@@ -46,27 +48,42 @@ function App() {
       {/* <UseStateHook1></UseStateHook1> */}
       {/* <UseState2></UseState2> */}
 
+      {/* <UseStateImg/> */}
+      {/* <HandleImage/> */}
 
-{/* <UseStateImg/> */}
-{/* <HandleImage/> */}
+      {/* <Toggle/> */}
+      {/* <WhyUseState/> */}
+      {/* <Increment/>   */}
 
-{/* <Toggle/> */}
-{/* <WhyUseState/> */}
-{/* <Increment/>   */}
+      {/* <UseEffectPractice/> */}
 
-{/* <UseEffectPractice/> */}
-
-{/* {show ? <LearnCleanUpFunction/> : null}
+      {/* {show ? <LearnCleanUpFunction/> : null}
          <button onClick={()=>{setShow(true)}} >show</button>
         <button onClick={()=>{setShow(false)}} >hide</button> */}
 
+      {/* ------------------------- */}
 
-      
-       <MyLinks/>   
-       <MyRoutes/>
+      {/* <MyLinks/>   
+       <MyRoutes/> */}
+
+       <NestedRoutesProduct/>
+
+      {/* ------------------- */}
+
+      {/* <Form1 /> */}
 
 
-        <p>____APP COMPONENT____</p>
+      {/* <Form2/> */}
+
+
+
+
+
+      <b>
+        <p style={{ marginTop: "300px", color: "green " }}>
+          ____APP COMPONENT____
+        </p>
+      </b>
     </div>
   );
 }

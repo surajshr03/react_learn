@@ -160,3 +160,14 @@ in main file (i.e: index.js)
 
 
 -      useState : variable define garna.
+
+
+
+-----------
+
+
+
+eg:
+<input value="suraj"/> : in this tag whatever is kept in value it'll be displayed in the browser(input) (Note :htmlFor use gaexam label tag ma)
+
+-harek input ko lagi value ra onChange((e)=>{}) chaninxa . (euta bata ni milxa but pkg chainxa.)

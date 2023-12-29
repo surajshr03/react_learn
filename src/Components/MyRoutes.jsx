@@ -12,7 +12,15 @@ const MyRoutes = () => {
   return (
     <div>
       <Routes>
+{/* home page */}
+            <Route 
+            path="/" 
+            element={<div>Home page</div>} >
+            </Route>
 
+
+
+            {/* ------------------------- */}
             <Route 
             path="/products/create" 
             element={<CreateProducts></CreateProducts>} >
@@ -48,6 +56,12 @@ const MyRoutes = () => {
             <Route 
             path="/students" 
             element={<ReadAllStudents/>} >
+            </Route>
+
+            {/* ----------------------- */}
+            <Route 
+            path="/*" 
+            element={<div>404 page not found</div>} >
             </Route>
 
 
