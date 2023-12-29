@@ -73,7 +73,7 @@ function App() {
       {/* <Form1 /> */}
 
 
-      {/* <Form2/> */}
+      <Form2/>
 
 
 

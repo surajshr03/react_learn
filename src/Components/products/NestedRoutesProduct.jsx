@@ -14,17 +14,18 @@ const NestedRoutesProduct = () => {
             path="/"
             element={<Outlet></Outlet>}>
                   <Route index element={<div>Home page</div>}></Route>
+
                   <Route path="products" element={<Outlet></Outlet>}>
                         <Route index element={<div>Read all products</div>}></Route>
                         <Route path=":id" element={<div>detail page</div>}></Route>
                         <Route path="create" element={<div>create products</div>}></Route>
-                        <Route path="update" element={<Outlet></Outlet>}>
+                  </Route>
+
+                  <Route path="update" element={<Outlet></Outlet>}>
                               <Route index element={<div>Update page</div>}></Route>
                               <Route path=":id" element={<div>Products update page.</div>}></Route>
-                        </Route>
-
-
                   </Route>
+                  
                   <Route path="*" element={<div>404: page not found</div>}></Route>
             </Route>
       </Routes>

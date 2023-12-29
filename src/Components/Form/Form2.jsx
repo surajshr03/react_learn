@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const Form2 = () => {
  
-  
+  const[isMarried,setIsMarried]=useState(false)
   let onSubmit = (e) => {
     e.preventDefault();
     let data = {
@@ -15,15 +15,15 @@ const Form2 = () => {
       Form
       <div>
           <br />
-          <label htmlFor="des">Description:</label>
+          <label htmlFor="iM">Description:</label>
           <input
             type="checkbox"
             placeholder="Eg : my name is Suraj Shrestha."
-            id="des"
+            id="iM"
             checked={isMarried===true}
             onChange={(e) => {
               // console.log(e.target.value);
-              setDescription(e.target.checked);
+              setIsMarried(e.target.checked);
             }}
           />
         </div>
