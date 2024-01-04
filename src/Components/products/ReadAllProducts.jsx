@@ -24,8 +24,25 @@ const ReadAllProducts = () => {
 
   };
 
+  
+  
+  let deleteProduct=async(id)=>{
+    try {
+      
+    let result = await axios({
+      url:`http://localhost:8001/products/${id}`,
+      method:`DELETE`,
+    })
+    getAllProduct();
+      
+    } catch (error) {
+      console.log('error')
+    }
+
+  }
   useEffect(()=>{ 
     getAllProduct();
+
   },[])
 
 
@@ -46,9 +63,17 @@ const ReadAllProducts = () => {
               <button style={{marginRight:"30px"}} onClick={()=>{
                 navigate(`/products/${item._id}`);
               }}>View</button>
-              <button style={{marginRight:"30px"}}>Edit</button>
-              <button style={{marginRight:"30px"}} onClick={()=>{
-                
+              
+              <button style={{marginRight:"30px"}}
+              onClick={(e)=>{
+                navigate(`/products/update/${item._id}`);
+
+              }}>Edit</button>
+
+              <button style={{marginRight:"30px"}}
+
+              onClick={()=>{
+                deleteProduct(item._id)
               }}>Delete</button>
             </p>
             </div>
