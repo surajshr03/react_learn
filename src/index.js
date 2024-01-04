@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import "./learncss.css";
 import  "./global.css"
 import { BrowserRouter } from 'react-router-dom';
+import MyApp from './MyApp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,7 +14,12 @@ root.render(
 <BrowserRouter>
   {/* <React.StrictMode> */}
     {/* <App /> */}
-    <App></App>
+    {/* sikna lai chai App ma */}
+    {/* <App></App> */}
+
+
+{/* project haru MyApp ma */}
+    <MyApp/>
   {/* </React.StrictMode> */}
 </BrowserRouter>
 {/* app component ko component le aba browser routing support garxa */}

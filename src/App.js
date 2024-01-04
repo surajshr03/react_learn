@@ -1,19 +1,13 @@
 import { useState } from "react";
 import "./App.css";
-import LearnCleanUpFunction from "./Components/UseEffectHook/LearnCleanUpFunction.jsx";
-import UseEffectPractice from "./Components/UseEffectHook/UseEffectPractice.jsx";
-import UseEffectPractise from "./Components/UseEffectHook/UseEffectPractice.jsx";
-//alt + shift + o : garera unused hatako xu paxi chaiye ma feri import garney
-import HandleImage from "./Components/UseStateHook/HandleImage.jsx";
-import Increment from "./Components/UseStateHook/Increment.jsx";
-import Toggle from "./Components/UseStateHook/Toggle.jsx";
-import WhyUseState from "./Components/UseStateHook/WhyUseState.jsx";
 
-import MyLinks from "./Components/MyLinks.jsx";
-import MyRoutes from "./Components/MyRoutes.jsx";
-import Form1 from "./Components/Form/Form1.jsx";
+import ReactRouter from "./Components/ReactRouter.jsx";
+import Form3 from "./Components/Form/Form3.jsx";
+import FormRadio from "./Components/Form/FormRadio.jsx";
 import Form2 from "./Components/Form/Form2.jsx";
-import NestedRoutesProduct from "./Components/products/NestedRoutesProduct.jsx";
+import Gender from "./Components/Form/Gender.jsx";
+import GenderUsingMap from "./Components/Form/GenderUsingMap.jsx";
+import Days from "./Components/Form/Days.jsx";
 
 function App() {
   // let name = `Suraj`;
@@ -33,49 +27,63 @@ function App() {
 
     </div> */}
 
-      {/* <Age></Age> */}
-      {/* <Detail name="Suraj" address="Pharping" age ={22}></Detail> */}
-      {/* <Details1 name="Suraj" address="Pharping" age ={22}></Details1> */}
-      {/* <LearnTernary marks={56}></LearnTernary> */}
-      {/* <EffectOnDifferentData></EffectOnDifferentData> */}
-      {/* <Location  country="Nepal" province="03" district="Kathmandu" exactLocation="Pharping"></Location> */}
-      {/* <LearnMap></LearnMap> */}
-      {/* <LearnMap2></LearnMap2> */}
-      {/* <LearnFilter></LearnFilter> */}
+      <>
+        {/* <Age></Age> */}
+        {/* <Detail name="Suraj" address="Pharping" age ={22}></Detail> */}
+        {/* <Details1 name="Suraj" address="Pharping" age ={22}></Details1> */}
+        {/* <LearnTernary marks={56}></LearnTernary> */}
+        {/* <EffectOnDifferentData></EffectOnDifferentData> */}
+        {/* <Location  country="Nepal" province="03" district="Kathmandu" exactLocation="Pharping"></Location> */}
+      </>
+      <>
+        {/* <LearnMap></LearnMap> */}
+        {/* <LearnMap2></LearnMap2> */}
+        {/* <LearnFilter></LearnFilter> */}
 
-      {/* <ButtonClick></ButtonClick> */}
+        {/* <ButtonClick></ButtonClick> */}
 
-      {/* <UseStateHook1></UseStateHook1> */}
-      {/* <UseState2></UseState2> */}
+        {/* <UseStateHook1></UseStateHook1> */}
+        {/* <UseState2></UseState2> */}
 
-      {/* <UseStateImg/> */}
-      {/* <HandleImage/> */}
+        {/* <UseStateImg/> */}
+        {/* <HandleImage/> */}
 
-      {/* <Toggle/> */}
-      {/* <WhyUseState/> */}
-      {/* <Increment/>   */}
+        {/* <Toggle/> */}
+        {/* <WhyUseState/> */}
+        {/* <Increment/>   */}
 
-      {/* <UseEffectPractice/> */}
-
-      {/* {show ? <LearnCleanUpFunction/> : null}
+        {/* <UseEffectPractice/> */}
+        {/* {show ? <LearnCleanUpFunction/> : null}
          <button onClick={()=>{setShow(true)}} >show</button>
         <button onClick={()=>{setShow(false)}} >hide</button> */}
+      </>
 
       {/* ------------------------- */}
 
       {/* <MyLinks/>   
        <MyRoutes/> */}
 
-       <NestedRoutesProduct/>
+      {/* <NestedRoutesProduct /> */}
+
+
+      {/* <ReactRouter></ReactRouter> */}
+      
 
       {/* ------------------- */}
 
       {/* <Form1 /> */}
+      {/* <Form2 /> */}
+      {/* <Form3/> */}
+       {/* <FormRadio/> */}
+
+       {/* <Gender/> */}
+       {/* <GenderUsingMap/> */}
+       <Days/>
 
 
-      <Form2/>
 
 
+{/* --------------------------------------------- */}
 
 
 

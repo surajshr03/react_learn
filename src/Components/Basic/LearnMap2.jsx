@@ -1,5 +1,5 @@
 import React from "react";
-import { products } from "../product";
+import { products } from "../../product";
 
 const LearnMap2 = () => {
   // database bata awuney data is in form of array of object i.e [{},{},{}]

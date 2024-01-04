@@ -13,12 +13,16 @@ const Form2 = () => {
   return (
     <div>
       Form
+      <form 
+
+
+      onSubmit={onSubmit}>
       <div>
           <br />
-          <label htmlFor="iM">Description:</label>
+          <label htmlFor="iM">Is Married? :</label>
           <input
             type="checkbox"
-            placeholder="Eg : my name is Suraj Shrestha."
+            // placeholder=""
             id="iM"
             checked={isMarried===true}
             onChange={(e) => {
@@ -27,8 +31,6 @@ const Form2 = () => {
             }}
           />
         </div>
-      <form 
-      onSubmit={onSubmit}>
             <button type="submit">Proceed</button>
 
       </form>

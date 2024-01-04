@@ -1,5 +1,5 @@
 import React from "react";
-import { products } from "../product";
+import { products } from "../../product";
 
 const LearnFilter = () => {
   //       let task1=()=>{
