@@ -33,14 +33,35 @@ const ReadAllStudents = () => {
               <p style={{border:"solid black 2px", marginTop:"3px"}} key={i}>
                 Student name : {item.name}<br/>
                 Student age : {item.age}<br/>
-                Student martial status : {item.isMarried}
-
-
+                Student martial status : {String(item.isMarried)}
+                <br/>
+                <br/>
                 <button style={{marginRight:"30px"}} onClick={()=>{
                 navigate(`/students/${item._id}`);
               }}>View</button>
-              <button style={{marginRight:"30px"}}>Edit</button>
-              <button style={{marginRight:"30px"}}>Delete</button>
+
+              <button style={{marginRight:"30px"}}
+              onClick={(e)=>{
+                navigate(`/students/update/${item._id}`);
+
+              }}
+              >Edit</button>
+
+              <button style={{marginRight:"30px"}}
+              onClick={async()=>{
+
+                try {
+                  const result =await axios({
+                    url:`http://localhost:8001/students/${item._id}`,
+                    method:"DELETE"
+                  })
+                  getAllStudent();
+                  
+                } catch (error) {
+                  console.log('error')
+                  
+                }
+              }}>Delete</button>
 
 
 
@@ -57,3 +78,11 @@ const ReadAllStudents = () => {
 }
 
 export default ReadAllStudents
+
+// <button onClick={async()=>{
+//                  const res = await axios({
+//                   url: `http://localhost:8000/products/${product._id}`,
+//                   method: "DELETE"
+//                 })
+//                 getAllProducts();
+//               }}>Delete</button>

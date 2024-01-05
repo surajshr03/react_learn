@@ -8,6 +8,9 @@ import Form2 from "./Components/Form/Form2.jsx";
 import Gender from "./Components/Form/Gender.jsx";
 import GenderUsingMap from "./Components/Form/GenderUsingMap.jsx";
 import Days from "./Components/Form/Days.jsx";
+import LearnRef1 from "./Components/LearnRefHook/LearnRef1.jsx";
+import AddDataToLocalStorage from "./Components/LearnLocalStorage/AddDataToLocalStorage.jsx";
+import GetDataFromLocalStorage from "./Components/LearnLocalStorage/GetDataFromLocalStorage.jsx";
 
 function App() {
   // let name = `Suraj`;
@@ -78,12 +81,23 @@ function App() {
 
        {/* <Gender/> */}
        {/* <GenderUsingMap/> */}
-       <Days/>
+       {/* <Days/> */}
 
 
 
 
 {/* --------------------------------------------- */}
+
+{/* <LearnRef1/> */}
+
+
+{/* ------------------- */}
+{/* local Storage */}
+
+{/* <AddDataToLocalStorage/> */}
+<GetDataFromLocalStorage/>
+
+{/* ------------------- */}
 
 
 
