@@ -11,6 +11,10 @@ import Days from "./Components/Form/Days.jsx";
 import LearnRef1 from "./Components/LearnRefHook/LearnRef1.jsx";
 import AddDataToLocalStorage from "./Components/LearnLocalStorage/AddDataToLocalStorage.jsx";
 import GetDataFromLocalStorage from "./Components/LearnLocalStorage/GetDataFromLocalStorage.jsx";
+import RemoveDataFromLocalStorage from "./Components/LearnLocalStorage/RemoveDataFromLocalStorage.jsx";
+import AddDataToSessionStorage from "./Components/LearnSessionStorage/AddDataToSessionStorage.jsx";
+import GetDataToSessionStorage from "./Components/LearnSessionStorage/GetDataToSessionStorage.jsx";
+import RemoveDataFromSession from "./Components/LearnSessionStorage/RemoveDataFromSession.jsx";
 
 function App() {
   // let name = `Suraj`;
@@ -60,18 +64,13 @@ function App() {
          <button onClick={()=>{setShow(true)}} >show</button>
         <button onClick={()=>{setShow(false)}} >hide</button> */}
       </>
-
       {/* ------------------------- */}
-
       {/* <MyLinks/>   
        <MyRoutes/> */}
 
       {/* <NestedRoutesProduct /> */}
 
-
       {/* <ReactRouter></ReactRouter> */}
-      
-
       {/* ------------------- */}
 
       {/* <Form1 /> */}
@@ -82,20 +81,21 @@ function App() {
        {/* <Gender/> */}
        {/* <GenderUsingMap/> */}
        {/* <Days/> */}
-
-
-
-
 {/* --------------------------------------------- */}
 
 {/* <LearnRef1/> */}
-
-
 {/* ------------------- */}
 {/* local Storage */}
 
 {/* <AddDataToLocalStorage/> */}
-<GetDataFromLocalStorage/>
+{/* <GetDataFromLocalStorage/> */}
+{/* <RemoveDataFromLocalStorage/> */}
+
+{/* Session Storage */}
+
+<AddDataToSessionStorage/>
+<GetDataToSessionStorage/>
+<RemoveDataFromSession/>
 
 {/* ------------------- */}
 
