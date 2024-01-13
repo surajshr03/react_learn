@@ -18,8 +18,6 @@ const MyRoutes = () => {
             element={<div>Home page</div>} >
             </Route>
 
-
-
             {/* ------------------------- */}
             <Route 
             path="/products/create" 

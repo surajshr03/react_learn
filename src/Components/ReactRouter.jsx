@@ -9,11 +9,22 @@ import ReadSpecificStudent from './students/ReadSpecificStudent';
 import CreateStudents from './students/CreateStudents';
 import UpdateStudents from './students/UpdateStudents';
 import { Outlet, Route, Routes } from 'react-router-dom';
+import AdminRegister from './Login Management/AdminRegister.jsx';
+import AdminVerify from './Login Management/AdminVerify.jsx';
+import AdminLogin from './Login Management/AdminLogin.jsx';
+import AdminProfile from './Login Management/AdminProfile.jsx';
+import AdminLogout from './Login Management/AdminLogout.jsx';
+import AdminProfileUpdate from './Login Management/AdminProfileUpdate.jsx';
+import AdminPasswordUpdate from './Login Management/AdminPasswordUpdate.jsx';
+import AdminForgotPassword from './Login Management/AdminForgotPassword.jsx';
+import AdminResetPassword from './Login Management/AdminResetPassword.jsx';
+import ReadAllUsers from './Login Management/ReadAllUsers.jsx';
 
 const ReactRouter = () => {
       return (
         <div>
           <Routes>
+              
             <Route
               path="/"
               element={
@@ -25,7 +36,11 @@ const ReactRouter = () => {
               }
             >
               <Route index element={<div>Home Page</div>}></Route>
-    
+              
+              <Route path='verify-email' element={<AdminVerify/>}></Route>
+              <Route path='reset-password' element={<div><AdminResetPassword/></div>}></Route>
+
+
               <Route
                 path="products"
                 element={
@@ -91,7 +106,35 @@ const ReactRouter = () => {
                   ></Route>
                 </Route>
               </Route>
+
+              <Route path="admin" element={<div><Outlet></Outlet></div>}>
+
+                <Route index element={<div>This is admin dashboard.</div>}></Route>
+
+                <Route path='profile-update' element={<div><AdminProfileUpdate/></div>}></Route>
+                
+                <Route path='update-password' element={<div><AdminPasswordUpdate/></div>}></Route>
+
+                <Route path='forgot-password' element={<div><AdminForgotPassword/></div>}></Route>
+
+                <Route path='read-all-users' element={<div><ReadAllUsers/></div>}></Route>
+                
+                <Route path='register' element={<div><AdminRegister/></div>}></Route>
+
+                <Route path='my-profile' element={<div><AdminProfile/></div>}></Route>
+
+                <Route path=':id' element={<div><ReadSpecificUser/></div>}></Route>
+
+
+
+                <Route path='login' element={<div><AdminLogin/></div>}></Route>
+                <Route path='logout' element={<div><AdminLogout/></div>}></Route>
+
+              </Route>
+
+
             </Route>
+            
           </Routes>
         </div>
       );

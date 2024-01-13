@@ -12,16 +12,16 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div>
 <BrowserRouter>
-  {/* <React.StrictMode> */}
+  <React.StrictMode>
     {/* <App /> */}
     {/* sikna lai chai App ma */}
-    <App></App>
+    {/* <App></App> */}
 
 
 {/* project haru MyApp ma */}
 
-    {/* <MyApp/> */}
-  {/* </React.StrictMode> */}
+    <MyApp/>
+  </React.StrictMode>
 </BrowserRouter>
 {/* app component ko component le aba browser routing support garxa */}
 

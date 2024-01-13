@@ -23,8 +23,7 @@ const CreateStudents = () => {
       let result = await axios({
         url:`http://localhost:8001/students`,
         method : "POST",
-        data : data ,
-
+        data : data 
       })
       setName("");
       setAge("");
@@ -55,8 +54,6 @@ const CreateStudents = () => {
         theme: "dark",
         });
     }
-
-
   };
   return (
     <div>
