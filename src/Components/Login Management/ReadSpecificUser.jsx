@@ -1,28 +1,30 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
-const AdminProfile = () => {
+const ReadSpecificUser = () => {
 
-      let [profile, setProfile]=useState({});
+      let [user, setUser]=useState({});
       let token = localStorage.getItem("token")
 
       let navigate = useNavigate();
+      let params=useParams()
+      let id = params.id;
 
 
-      let getAdminProfile =async()=>{
+      let getAdminUser =async()=>{
 
             try {
 
                   let result = await axios({
-                        url:`http://localhost:8001/web-users/my-profile`,
+                        url:`http://localhost:8001/web-users/${id}`,
                         method : "GET",
                         headers : {
                               Authorization : `Bearer ${token}`
                         }
                   })
                   console.log(result.data.result)
-                  setProfile(result.data.result)
+                  setUser(result.data.result)
                   
             } catch (error) {
                   
@@ -32,14 +34,14 @@ const AdminProfile = () => {
 
 
       useEffect(()=>{
-            getAdminProfile();
+            getAdminUser();
       },[])
   return (
-    <div>AdminProfile:
-      <p>Full name  : {profile.fullName} </p>
-      <p>Gender : {profile.gender} </p>
-      <p>Date of Birth : {new Date(profile.dob).toLocaleDateString()} </p>
-      <p>Role : {profile.role} </p>
+    <div>Specific User DashBoard:
+      <p>Full name  : {user.fullName} </p>
+      <p>Gender : {user.gender} </p>
+      <p>Date of Birth : {new Date(user.dob).toLocaleDateString()} </p>
+      <p>Role : {user.role} </p>
 
       <button onClick={()=>{
             navigate("/admin/update/:id")
@@ -49,4 +51,4 @@ const AdminProfile = () => {
   )
 }
 
-export default AdminProfile
+export default ReadSpecificUser

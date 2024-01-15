@@ -50,7 +50,7 @@ const ReadAllUsers = () => {
               <button
                 style={{ marginRight: "30px" }}
                 onClick={(e) => {
-                  navigate(`/users/update/${item._id}`);
+                  navigate(`/admin/update/${item._id}`);
                 }}
               >
                 Edit

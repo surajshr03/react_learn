@@ -4,7 +4,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
-const AdminProfileUpdate = () => {
+const UpdateSpecificUser = () => {
   const [fullName, setFullName] = useState("");
   const [dob, setDob] = useState("");
   const [gender, setGender] = useState("male");
@@ -12,8 +12,8 @@ const AdminProfileUpdate = () => {
   let navigate = useNavigate()
   let token = localStorage.getItem("token");
 
-  let params = useParams()
-  let id= params.id
+  let params=useParams()
+  let id = params.id;
 
   let genders = [
     { label: "Male", value: "male" },
@@ -29,10 +29,10 @@ const AdminProfileUpdate = () => {
       gender:gender,
     }
     // console.log(data)
-  
+
     try {
     let result = await axios({
-      url:`http://localhost:8001/web-users/update-profile`,
+      url:`http://localhost:8001/web-users/${id}`,
       method : "PATCH",
       data : data,
       headers:{
@@ -45,16 +45,14 @@ const AdminProfileUpdate = () => {
   } catch (error) {
     toast.error(error.message)
   }
-
-
   };
 
-  let getAdminProfile =async()=>{
+  let getUserProfile =async()=>{
 
       try {
 
             let result = await axios({
-                  url:`http://localhost:8001/web-users/my-profile`,
+                  url:`http://localhost:8001/web-users/${id}`,
                   method : "GET",
                   headers : {
                         Authorization : `Bearer ${token}`
@@ -71,15 +69,16 @@ const AdminProfileUpdate = () => {
             
       }
 }
+
 useEffect(()=>{
-      getAdminProfile();
+      getUserProfile();
 },[])
 
 
   return (
     <div>
       <ToastContainer/>
-      Form
+      Update Form
       <form onSubmit={onSubmit}>
         <br />
         {/* name         */}
@@ -139,4 +138,6 @@ useEffect(()=>{
     </div>
   );
 };
-export default AdminProfileUpdate;
+export default UpdateSpecificUser;
+
+

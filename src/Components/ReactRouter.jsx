@@ -19,6 +19,8 @@ import AdminPasswordUpdate from './Login Management/AdminPasswordUpdate.jsx';
 import AdminForgotPassword from './Login Management/AdminForgotPassword.jsx';
 import AdminResetPassword from './Login Management/AdminResetPassword.jsx';
 import ReadAllUsers from './Login Management/ReadAllUsers.jsx';
+import ReadSpecificUser from './Login Management/ReadSpecificUser.jsx';
+import UpdateSpecificUser from './Login Management/UpdateSpecificUser.jsx';
 
 const ReactRouter = () => {
       return (
@@ -123,9 +125,13 @@ const ReactRouter = () => {
 
                 <Route path='my-profile' element={<div><AdminProfile/></div>}></Route>
 
+
+                 
                 <Route path=':id' element={<div><ReadSpecificUser/></div>}></Route>
 
-
+                 
+                <Route path='update' element={<div><Outlet></Outlet></div>}>
+                  <Route path=':id' element={<div><UpdateSpecificUser/></div>} ></Route>               </Route>
 
                 <Route path='login' element={<div><AdminLogin/></div>}></Route>
                 <Route path='logout' element={<div><AdminLogout/></div>}></Route>

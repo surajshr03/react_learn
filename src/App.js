@@ -15,13 +15,24 @@ import RemoveDataFromLocalStorage from "./Components/LearnLocalStorage/RemoveDat
 import AddDataToSessionStorage from "./Components/LearnSessionStorage/AddDataToSessionStorage.jsx";
 import GetDataToSessionStorage from "./Components/LearnSessionStorage/GetDataToSessionStorage.jsx";
 import RemoveDataFromSession from "./Components/LearnSessionStorage/RemoveDataFromSession.jsx";
+import LearnUseContext from "./Components/useContext/LearnUseContext.jsx";
+import Parent from "./Components/propDrilling/Parent.jsx";
+import { createContext } from "react";
+
+
+export let Context1 = createContext();
+export let Context2 = createContext();
 
 function App() {
   // let name = `Suraj`;
   // let age = `22`;
   // console.log(name)
 
-  const [show, setShow] = useState(true);
+  const [name, setName] = useState("sun");
+  const [age, setAge] = useState(22);
+  const [address, setAddress] = useState("solar");
+
+  // const [show, setShow] = useState(true);
 
   return (
     <div style={{ textAlign: "center" }}>
@@ -93,14 +104,30 @@ function App() {
 
 {/* Session Storage */}
 
-<AddDataToSessionStorage/>
-<GetDataToSessionStorage/>
-<RemoveDataFromSession/>
+{/* <AddDataToSessionStorage/> */}
+{/* <GetDataToSessionStorage/> */}
+{/* <RemoveDataFromSession/> */}
 
 {/* ------------------- */}
 
+{/* <LearnUseContext></LearnUseContext> */}
+
+{/* ----------------------------- */}
+
+{/* prop drilling */}
+
+<Context1.Provider value={{name:name,age:age,setName:setName,setAge:setAge}}>
+  <Context2.Provider value={{address:address,setAddress:setAddress}}>
+
+  {/* <Parent></Parent> */}
+  
+  </Context2.Provider>
+ </Context1.Provider>
+
+{/* ------------------ */}
 
 
+{/* ---------------------------------- */}
       <b>
         <p style={{ marginTop: "300px", color: "green " }}>
           ____APP COMPONENT____
