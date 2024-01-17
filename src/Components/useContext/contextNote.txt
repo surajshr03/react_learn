@@ -1,0 +1,25 @@
+export let Context1 = createContext(); yeslai function baira define garney.
+
+<Context1.Provider value={name}>  //value={name} yo chai pass garney value.//value={{name:"dd",age:21}}
+  <Parent ></Parent>
+ </Context1.Provider>
+
+ <Context1.Provider>
+ component define  //yo component lai matra provide garxa(+ its all child)
+ </Context1.Provider>
+
+
+
+--------------
+    create Context
+    provide Context
+    add value to Context
+    get value from Context    //   let value = useContext(Context1);
+    {
+      name:name,
+      age:age,
+      setName:setName,
+      setAge:setAge
+    }
+
+    change value of Context
