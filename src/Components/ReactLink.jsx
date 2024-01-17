@@ -3,10 +3,8 @@ import { NavLink } from "react-router-dom";
 import { GlobalVariableContext } from "../MyApp";
 
 const ReactLink = () => {
+  let {token,setTOken} = useContext(GlobalVariableContext);
 
-  // let token = localStorage.getItem("token");
-  let global = useContext(GlobalVariableContext)
-  let token = global.token;
   return (
     <div>
 
@@ -14,20 +12,13 @@ const ReactLink = () => {
         Register
       </NavLink>
 
-         {/* {
-         token ? <>(<NavLink to="/admin/my-profile" style={{ marginRight: "20px" }}>
-         My Profile
-       </NavLink>)
-         </>:null
-      } */}
-
-         {
-         token ? 
-         <>
-         <NavLink to="/admin/my-profile" style={{ marginRight: "20px" }}>
-         My Profile
-       </NavLink>
-       <NavLink to="/admin/update-password" style={{ marginRight: "20px" }}>
+      {
+        token ? 
+        <>
+<NavLink to="/admin/my-profile" style={{ marginRight: "20px" }}>
+        My Profile
+      </NavLink>
+      <NavLink to="/admin/update-password" style={{ marginRight: "20px" }}>
         Update password
       </NavLink>
       <NavLink to="/admin/read-all-users" style={{ marginRight: "20px" }}>
@@ -36,16 +27,19 @@ const ReactLink = () => {
       <NavLink to="/admin/logout" style={{ marginRight: "20px" }}>
         Log Out
       </NavLink>
-       
-         </>
-         :
-         <> 
-         <NavLink to="/admin/login" style={{ marginRight: "20px" }}>
+        </>
+        :
+        <>
+          <NavLink to="/admin/login" style={{ marginRight: "20px" }}>
         Login
       </NavLink>
-         </>
+
+        </>
+
       }
-    
+      
+
+      
 
 
       {/* <NavLink to="/products/create" style={{ marginRight: "20px" }}>

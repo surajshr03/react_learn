@@ -14,6 +14,7 @@ root.render(
 <BrowserRouter>
   <React.StrictMode>
     {/* <App /> */}
+    {/* <App /> */}
     {/* sikna lai chai App ma */}
     {/* <App></App> */}
 
@@ -21,6 +22,7 @@ root.render(
 {/* project haru MyApp ma */}
 
     <MyApp/>
+    {/* <MyApp/> */}
   </React.StrictMode>
 </BrowserRouter>
 {/* app component ko component le aba browser routing support garxa */}

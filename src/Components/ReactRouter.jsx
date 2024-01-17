@@ -131,6 +131,7 @@ const ReactRouter = () => {
                 <Route path='update' element={<div><Outlet></Outlet></div>}>
                   <Route path=':id' element={<div><UpdateSpecificUser/></div>} ></Route> 
                   </Route>
+
                 <Route path='logout' element={<div><AdminLogout/></div>}></Route>
 
                   </>//this concept is also know as private routing.
@@ -144,6 +145,9 @@ const ReactRouter = () => {
                 <Route path='forgot-password' element={<div><AdminForgotPassword/></div>}></Route>
                 
                 <Route path='register' element={<div><AdminRegister/></div>}></Route>
+
+              
+
                 <Route path='*' element={<div>404 page not found</div>}></Route>
 
               </Route>
